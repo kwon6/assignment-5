@@ -28,6 +28,6 @@ then
 else
 	echo "USING EXISTING BUILDROOT CONFIG"
 	echo "To force update, delete .config or make changes using make menuconfig and build again."
-	make -C buildroot BR2_EXTERNAL=${EXTERNAL_REL_BUILDROOT} BR2_CCACHE=y
+	make -C buildroot BR2_EXTERNAL=${EXTERNAL_REL_BUILDROOT} BR2_CCACHE=y BR2_CCACHE_DIR=${HOME}/.buildroot-ccache
 
 fi
