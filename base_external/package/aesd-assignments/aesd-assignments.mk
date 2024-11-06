@@ -7,7 +7,7 @@
 
 #TODO: Fill up the contents below in order to reference your assignment 3 git contents
 #AESD_ASSIGNMENTS_VERSION = '#COMMIT VERSION NUMBER'
-AESD_ASSIGNMENTS_VERSION = '0824506aca00ecbb6e8e73661e6cb94f1542eb6d'
+AESD_ASSIGNMENTS_VERSION = '4b6bd47d5d53fea926030bed1d31f48c008580ae'
 # Note: Be sure to reference the *ssh* repository URL here (not https) to work properly
 # with ssh keys and the automated build/test system.
 # Your site should start with git@github.com:
@@ -25,7 +25,6 @@ endef
 #
 # Install your aesdsocket-start-stop script to /etc/init.d/S99aesdsocket
 define AESD_ASSIGNMENTS_INSTALL_TARGET_CMDS
-	$(INSTALL) -d 0755 $(@D)/server/ $(TARGET_DIR)/etc/init.d/S99aesdsocket/
 	$(INSTALL) -m 0755 $(@D)/server/aesdsocket-start-stop $(TARGET_DIR)/etc/init.d/S99aesdsocket
 	$(INSTALL) -m 0755 $(@D)/server/aesdsocket $(TARGET_DIR)/usr/bin
 endef
